@@ -1,0 +1,108 @@
+TODO parquet?
+
+http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html
+
+================
+MR
+================
+- better to pipe together simple jobs instead of writing a complex job
+  - functional!
+
+- each record for a given key is processed by the same reducer
+
+================
+HDFS BASICS
+================
+- distributed fs designed to run on commodity hardware
+  - fault tolerance
+
+- designed for batch processing
+  - emphasis on high throughput rather than low latency
+
+- namenode & multiple data nodes
+
+- namenode controls all metadata & datanode access
+  - manages the fs namespace
+  - manages client communication with datanodes
+  - manages replication (receives heartbeats & blockreports from datanodes)
+
+- philosophy: move code to data
+  - compute nodes are the storage nodes
+
+================
+DATA STORAGE
+================
+
+- files are chopped up & stored in blocks
+  - default block size = 64 mb
+  - each block stored on different node if possible
+
+- client writes are cached locally before being persisted
+  - nnode handles fs metadata & dnode allocation
+  - data flushed to dnode when size exceeds 1 block
+  - this reduces network congestion and improves throughput
+  - replication of new data takes place via pipelining (eg dnode 1 -> dnode 2 -> dnode 3)
+
+- deletes are moved to /trash directory
+  - default = trash emptied every 6 hours
+
+================
+REPLICATION POLICY
+================
+- default replication factor = 3
+- 1st replica on local node, 2nd replica in local rack, 3rd replica in different rack
+
+- compromise between read performance & write performance
+  - read speeds max'd when all replication occurs in the same rack
+  - write speeds max'd when all repl occurs in separate racks
+  - results in non-uniform distribution of data
+
+- preserves data reliability & availability guarantees
+  - whole rack failure is unlikely
+
+================
+NODE COMMS
+================
+
+- client talks to nnode, nnode talks to dnode
+
+- nnode & dnodes communicate via RPCs (abstractions which wrap tcp/ip protocols)
+  - these use serialization to render messages in binary for transport
+  - conserves network bandwidth (scarcest resource in a distributed system)
+  - namenode never initiates RPC, only receives RPCs from client & datanodes
+
+================
+METADATA
+================
+
+- namenode stores namespace, blockmap data in memory
+
+- data also persisted in namenode's local fs
+  - editlog: records all hdfs transactions
+  - fsimage: stores blocks-to-files mapping, other fs properties
+
+- namenode startup procedure ("checkpoint")
+  - load fsimage into memory, apply transactions from editlog, flush new fsimage, truncate existing editlog
+
+- datanodes store 1 block per file in their local fs
+  - no knowledge of hdfs!
+
+- datanode startup procedure ("blockreport")
+  - scan local fs, generate list of files (blocks), send report to namenode
+
+================
+FAULT TOLERANCE & DATA INTEGRITY
+================
+- 3 types of faults: namenode failure, datanode failure, network partition
+- loss of datanode connectivity detected via hearbeats
+  - missing datanodes are marked dead and affected data is re-replicated
+
+- files are checksum-verified when transferred between nodes
+  - data re-transferred from another node if checksums don't match
+
+- metadata (editlog, fsimage) corruption can totally hose hdfs
+  - several copies are maintained & updated synchronously
+
+- namenode failure = mushroom cloud (hadoop 1.x only?)
+
+
