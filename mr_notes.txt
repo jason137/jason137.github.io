@@ -1,0 +1,9 @@
+================
+MR
+================
+- better to pipe together simple jobs instead of writing a complex job
+  - functional!
+
+- each record for a given key is processed by the same reducer
+
+

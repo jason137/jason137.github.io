@@ -3,14 +3,6 @@ TODO parquet?
 http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html
 
 ================
-MR
-================
-- better to pipe together simple jobs instead of writing a complex job
-  - functional!
-
-- each record for a given key is processed by the same reducer
-
-================
 HDFS BASICS
 ================
 - distributed fs designed to run on commodity hardware
