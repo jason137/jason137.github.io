@@ -1,0 +1,120 @@
+epistasis - masking of gene expression by expression of another gene
+antisense RNA
+primer
+polymerase
+polymerase chain reaction (PCR) - used to amplify small fragments of DNA; used in forensics, research, genetic engineering
+oligonucleotide - a short strand of nucleotides that is synthesized & used in research; used as probes for sequence detection
+CRISPR - a means of site-specific gene editing; based on the mechanism of adaptive immunity in prokaryotes
+accession number - unique GenBank id
+adenosine triphosphate (ATP) - a form of adenine that serves as an energy storage molecule for the cell
+allele - one of several alternate forms of a gene (occuring in the same position on a chromosome), usually resulting in no phenotypic difference
+amino acid - building blocks of proteins (there are 20)
+Archae - a domain of single-celled micro-organisms, distinct from Bacteria in their biochemistry
+Bacteriophage lambda
+base
+binding site
+C-value enigma - name given to the wide variance in nuclear genome size among eukaryotes (particularly with respect to non-coding DNA)
+C. elegans - a 1mm long roundworm; the first multicellular organism to have its whole genome sequenced (also the only organism to have its connectome mapped)
+catalyst - a substance that speeds up a chemical reaction without undergoing any permanent chemical change itself
+cell - the fundamental biological unit; cells are the "basic building blocks of all living things"
+cell signaling - mechanism that coordinates actions of the cell; basis of development, tissue repair, immunity, homeostasis
+central dogma of molecular bio - DNA makes RNA makes protein!
+chloroplast - organelle in plant cells responsible for photosynthesis
+chromosome - nuclear structure containing DNA; humans have 23 pairs of autosomes & 1 pair of sex chromosomes
+codon - a sequence of three nucleotides that codes for a particular amino acid
+complementary strand
+developmental biology - study of cell growth, differentiation, and morphogenesis (spatial distribution)
+diploid - a cell containing two sets of chromosomes (one from each parent)
+DNA - self-replicating material present in nearly all organisms; main constituent of chromosomes, carrier of genetic information
+DNA orientation - chemical orientation of a strand of nucleic acid; 5'-3'
+orientation 
+Drosophila melanogaster - the common fruit fly; used as a model organism in genetics, one of the most studied organisms in biology
+dynamic programming - a method for solving complex problems by breaking them up into subproblems (frequently using memoization or caching)
+enzyme - a biochemical catalyst; enzymes can speed up chemical reactions in the cell
+eukaryote - organism whose cells contain nuclei & membrane-bound organelles; all multicellular organisms (and some unicellular organisms) are eukaryotes
+evolution - the effect of natural selection
+exon - part of a eukaryotic gene that is transcribed & translated (expressed)
+eyeless - a famous example of a master regulatory gene
+frame-shift mutation - mutation (eg single-base insertion) which causes codons to be read in the wrong reading frame
+GC content
+GenBank - annotated database of all publicly available nucleotide sequences and their protein translations; maintained by a branch of NIH
+gene
+gene annotation - the process of functional identification of genetic sequences
+gene expression - the process by genetic information manifests itself in protein synthesis
+gene sequencing - the process of identifying DNA nucleotides
+genetic code - map between codons and amino acids (or stop signals)
+genome - the complete set of genetic information in a cell or organism
+global alignment - alignment between two full sequences
+H. influenzae
+haploid - a cell containing one set of chromosomes
+haplotype - a set of polymorphisms (alleles or SNPs) that tend to be inherited together
+heterozygous - having inherited different alleles for a particular gene from both parents
+high throughput technology
+histology - study of the microscopic structure of cells & tissues
+histone - proteins that nuclear DNA is wrapped around
+chromatin - complex of DNA and proteins that forms chromosomes within the nucleus of eukaryotic cells
+homology
+homozygous - having inherited the same alleles for a particular gene from both parents
+horizontal gene transfer - acquisition of genetic material from another organism, such as a virus
+indel - a letter paired with a gap in a sequence alignment (represents either an insertion or a deletion, depending on the perspective)
+intron - transcribed, but not translated, portion of a eukaryotic gene
+junk DNA
+nucleosome - section of DNA that is wrapped around a core of histones; the fundamental unit of chromatin
+k-mer - a contiguous nucleotide sequence of length k, analogous to an n-gram (k=2 --> dimer, k=3 --> trimer)
+kinase - enzyme that catalyzes phosphorylation
+local alignment
+M. genitalium
+master regulatory gene - gene that produces proteins which control the expression (?) of other genes
+metabolic network - complete set of processes that determine the physiological/biochemical properties of a cell (including metabolic pathways & regulatory interactions)
+metabolic pathway - sequence of steps through which one chemical is transformed into another (reactions catalyzed by enzymes)
+metabolism - complex network of chemical reactions in the cell that allow it to interact with its environment, derive energy and nutrients, and eventually reproduce
+microarray
+mitochondria - organelles found in most eukaryotic cells which generate most of the cell's ATP; "the powerhouse of the cell!"
+motif
+mRNA
+mtDNA - mitochondrial DNA; 
+multiple alignment
+mutation
+natural selection - the mechanism by which evolution is carried out
+negative selection
+non-coding DNA
+nuclear genome - genome contained in the cell's nucleus (instead of mitochondria or chloroplasts)
+nucleotide - molecular subunit of nucleic acids; DNA & RNA monomers
+open reading frame (ORF) - a stretch of DNA beginning with a start codon and ending with a stop codon
+organelle - a specialized subunit inside the cell with a particular function
+orthology
+paralogy
+phage
+phosphorylation - transfer of phosphate groups from a high-energy phosphate-containing molecule (like ATP) to a substrate 
+phylogenetic trees
+prokaryote - a single-celled organism without a nucleus or other (membrane-bound) organelles 
+protein - large molecule formed by chain of amino acids; folds into characteristic shape
+protein domain
+protein folding - process of forming a 3d protein from a chain of amino acids; building models to predict folding behavior is an area of active research and a "classical topic in bioinformatics"
+restriction site
+retrovirus
+reverse complement
+reverse transcription
+ribosome
+RNA - ribonucleic acid
+sequence alignment - a correspondence between characters in two (DNA/RNA/protein) sequences; meant to identify regions of similarity that may indicate biological relationships
+structural biology
+substrate - molecule upon which an enzyme acts
+systems biology
+telomere - end bit of DNA molecule
+transcription - mapping of DNA to RNA (exons --> mRNA)
+translation - mapping of RNA to proteins
+translocation
+variant
+virus
+whole-genome analysis
+
+ALGO STUFF
+===========
+multinomial model
+Markov model - a probabilistic model of state transitions which exhibits the Markov property (eg, the state at time t depends only on the state at time t-1)
+hidden Markov model (HMM) - a Markov model with latent states
+BLAST - popular heuristic local alignment algorithm used for matching a query sequence to homologues in a database
+FASTA
+Needleman-Wunsch algorithm - global alignment algo
+Smith-Waterman algorithm - local alignment algo
