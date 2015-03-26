@@ -2,8 +2,9 @@ epistasis - masking of gene expression by expression of another gene
 antisense RNA
 primer
 polymerase
-polymerase chain reaction (PCR) - used to amplify small fragments of DNA; used in forensics, research, genetic engineering
-oligonucleotide - a short strand of nucleotides that is synthesized & used in research; used as probes for sequence detection
+polymerase chain reaction (PCR) - lab technique used to amplify small fragments of DNA; used in forensics, research, genetic engineering
+nucleotide - monomer (building block) of a nucleic acid such as DNA or RNA
+oligonucleotide - a short strand of nucleotides; typically synthesized & used in research as probes for sequence detection
 CRISPR - a means of site-specific gene editing; based on the mechanism of adaptive immunity in prokaryotes
 accession number - unique GenBank id
 adenosine triphosphate (ATP) - a form of adenine that serves as an energy storage molecule for the cell
@@ -11,8 +12,14 @@ allele - one of several alternate forms of a gene (occuring in the same position
 amino acid - building blocks of proteins (there are 20)
 Archae - a domain of single-celled micro-organisms, distinct from Bacteria in their biochemistry
 Bacteriophage lambda
-base
-binding site
+base - nitrogen-containing compound found (along with a sugar & a phosphate group) in a nucleotide (ex: ACTG in DNA)
+epigenetics
+base pairing
+binding site - a region on a protein or nucleic acid to which ligands can form a chemical bond
+nucleic acid - polymer (composed of nucleotide monomers) responsible for encoding, transmitting, and expressing genetic information; common to all forms of life 
+polymer - a molecule composed of many repeated subunits (ex: DNA, RNA, proteins)
+monomer - a molecule that may bind to other molecules to form a polymer (ex: glucose)
+ligand - a substance (eg a small molecule) that forms a chemical bond bith a biomolecule
 C-value enigma - name given to the wide variance in nuclear genome size among eukaryotes (particularly with respect to non-coding DNA)
 C. elegans - a 1mm long roundworm; the first multicellular organism to have its whole genome sequenced (also the only organism to have its connectome mapped)
 catalyst - a substance that speeds up a chemical reaction without undergoing any permanent chemical change itself
@@ -21,19 +28,23 @@ cell signaling - mechanism that coordinates actions of the cell; basis of develo
 central dogma of molecular bio - DNA makes RNA makes protein!
 chloroplast - organelle in plant cells responsible for photosynthesis
 chromosome - nuclear structure containing DNA; humans have 23 pairs of autosomes & 1 pair of sex chromosomes
-codon - a sequence of three nucleotides that codes for a particular amino acid
+autosome - chromosome that is not a sex chromosome; autosomal pairs have the same form
+allosome (sex chromosome) - chromosome that determines the sex of an individual; allosomal pairs may take different forms (eg XY = male)
+codon - sequence of three nucleotides that codes for a particular amino acid
 complementary strand
 developmental biology - study of cell growth, differentiation, and morphogenesis (spatial distribution)
 diploid - a cell containing two sets of chromosomes (one from each parent)
 DNA - self-replicating material present in nearly all organisms; main constituent of chromosomes, carrier of genetic information
 DNA orientation - chemical orientation of a strand of nucleic acid; 5'-3'
 orientation 
+mendelian disease - a disease caused by a mutation in a single gene
 Drosophila melanogaster - the common fruit fly; used as a model organism in genetics, one of the most studied organisms in biology
 dynamic programming - a method for solving complex problems by breaking them up into subproblems (frequently using memoization or caching)
 enzyme - a biochemical catalyst; enzymes can speed up chemical reactions in the cell
 eukaryote - organism whose cells contain nuclei & membrane-bound organelles; all multicellular organisms (and some unicellular organisms) are eukaryotes
 evolution - the effect of natural selection
 exon - part of a eukaryotic gene that is transcribed & translated (expressed)
+exome - the expressed part of the genome
 eyeless - a famous example of a master regulatory gene
 frame-shift mutation - mutation (eg single-base insertion) which causes codons to be read in the wrong reading frame
 GC content
@@ -41,28 +52,31 @@ GenBank - annotated database of all publicly available nucleotide sequences and 
 gene
 gene annotation - the process of functional identification of genetic sequences
 gene expression - the process by genetic information manifests itself in protein synthesis
-gene sequencing - the process of identifying DNA nucleotides
+gene sequencing - the process of identifying DNA nucleotides in a gene
 genetic code - map between codons and amino acids (or stop signals)
 genome - the complete set of genetic information in a cell or organism
-global alignment - alignment between two full sequences
+global alignment - full alignment between two sequences
 H. influenzae
+Sanger sequencing - first-generation gene sequencing technique; developed at Cambridge in 1977, led to 1980 Nobel prize in chemistry (Sanger's second!)
+next-generation sequencing - high-throughput technologies which allow millions or billions of DNA strands to be sequenced in parallel
 haploid - a cell containing one set of chromosomes
+SNP - single nucleotide polymorphism; a variation in a single nucleotide
 haplotype - a set of polymorphisms (alleles or SNPs) that tend to be inherited together
 heterozygous - having inherited different alleles for a particular gene from both parents
 high throughput technology
 histology - study of the microscopic structure of cells & tissues
 histone - proteins that nuclear DNA is wrapped around
 chromatin - complex of DNA and proteins that forms chromosomes within the nucleus of eukaryotic cells
-homology
 homozygous - having inherited the same alleles for a particular gene from both parents
 horizontal gene transfer - acquisition of genetic material from another organism, such as a virus
 indel - a letter paired with a gap in a sequence alignment (represents either an insertion or a deletion, depending on the perspective)
-intron - transcribed, but not translated, portion of a eukaryotic gene
+intron - transcribed, but not translated, portion of a eukaryotic gene (removed by RNA splicing)
+RNA splicing - cellular preprocessing of the pre-mRNA transcript; introns separated from exons
 junk DNA
 nucleosome - section of DNA that is wrapped around a core of histones; the fundamental unit of chromatin
 k-mer - a contiguous nucleotide sequence of length k, analogous to an n-gram (k=2 --> dimer, k=3 --> trimer)
 kinase - enzyme that catalyzes phosphorylation
-local alignment
+local alignment - partial alignment between two sequences
 M. genitalium
 master regulatory gene - gene that produces proteins which control the expression (?) of other genes
 metabolic network - complete set of processes that determine the physiological/biochemical properties of a cell (including metabolic pathways & regulatory interactions)
@@ -70,10 +84,10 @@ metabolic pathway - sequence of steps through which one chemical is transformed 
 metabolism - complex network of chemical reactions in the cell that allow it to interact with its environment, derive energy and nutrients, and eventually reproduce
 microarray
 mitochondria - organelles found in most eukaryotic cells which generate most of the cell's ATP; "the powerhouse of the cell!"
-motif
-mRNA
+sequence motif - a recurring pattern in DNA that is thought to serve a functional purpose (eg binding sites for transcription factors)
+mRNA - messenger RNA;
 mtDNA - mitochondrial DNA; 
-multiple alignment
+multiple alignment - alignment of three or more sequences
 mutation
 natural selection - the mechanism by which evolution is carried out
 negative selection
@@ -82,8 +96,10 @@ nuclear genome - genome contained in the cell's nucleus (instead of mitochondria
 nucleotide - molecular subunit of nucleic acids; DNA & RNA monomers
 open reading frame (ORF) - a stretch of DNA beginning with a start codon and ending with a stop codon
 organelle - a specialized subunit inside the cell with a particular function
-orthology
-paralogy
+homology - existence of shared ancestry between structures or genes in different species; descent with modification
+orthology - homology arising from speciation
+speciation - evolutionary process by which new species arise
+paralogy - homology arising from duplication in the genome
 phage
 phosphorylation - transfer of phosphate groups from a high-energy phosphate-containing molecule (like ATP) to a substrate 
 phylogenetic trees
@@ -97,7 +113,7 @@ reverse complement
 reverse transcription
 ribosome
 RNA - ribonucleic acid
-sequence alignment - a correspondence between characters in two (DNA/RNA/protein) sequences; meant to identify regions of similarity that may indicate biological relationships
+sequence alignment - a correspondence between characters in two (DNA/RNA/protein) sequences; meant to identify regions of similarity that suggest homologies
 structural biology
 substrate - molecule upon which an enzyme acts
 systems biology
