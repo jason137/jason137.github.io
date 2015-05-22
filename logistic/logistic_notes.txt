@@ -1,0 +1,14 @@
+fig 1.1 (scatterplot)
+- high variability in Y
+- strategy: bucketing
+
+fig 1.2 (~histogram)
+- approx to E(Y|x)
+- S curve shape --> cdf --> logistic distribution
+
+consequences of binary dep var
+- dep var range
+- distr of error term
+--> linear vs logistic differences
+
+fitting the model

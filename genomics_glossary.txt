@@ -1,7 +1,11 @@
 epistasis - masking of gene expression by expression of another gene
+etiology - causes of a disease
 antisense RNA
 primer
-polymerase
+polymerase - an enzyme that synthesizes chains of nucleic acids
+DNA polymerase - replicates a template DNA strand via base pairing
+RNA polymerase - transcribes DNA into RNA
+recombination
 polymerase chain reaction (PCR) - lab technique used to amplify small fragments of DNA; used in forensics, research, genetic engineering
 nucleotide - monomer (building block) of a nucleic acid such as DNA or RNA
 oligonucleotide - a short strand of nucleotides; typically synthesized & used in research as probes for sequence detection
