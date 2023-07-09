@@ -1,0 +1,57 @@
+import numpy as np
+import pandas as pd
+
+import time
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+import streamlit as st
+
+from _config import CONFIG
+from _sim import sim
+
+def _run_over_epochs(dynamic_pct):
+
+    policy_rewards_A, policy_rewards_B = 0, 0
+    shocks = 0
+
+    for e in range(CONFIG["N_EPOCHS"]):
+        policy_rewards_A, policy_rewards_B, shocks = sim(e, dynamic_pct, policy_rewards_A, policy_rewards_B, shocks)
+
+    return policy_rewards_B / policy_rewards_A - 1    # RL percent outperformance
+
+def _draw_plot(results):
+    
+    k = pd.DataFrame(pd.Series(results))
+
+    sns.set_style("darkgrid")
+    
+    plt.suptitle("RL vs greedy decisions")
+    plt.title("max P = %s" % max(CONFIG["PROBS"]))
+
+    plt.ylabel("% RL outperformance")
+    plt.xlabel("% trials with env shocks")
+    
+    barplot = sns.barplot(k, x=np.array(k.index).round(2), y=k.values.ravel(), color="darkblue")
+    st.pyplot(barplot.figure)
+
+def main():
+
+    t0 = time.time()
+
+    st.title("N_STEPS =", CONFIG["N_STEPS"])
+    st.title("N_EPOCHS =", CONFIG["N_EPOCHS"])
+    st.title("PROBS =", CONFIG["PROBS"])
+
+    results = dict()
+
+    for dynamic_pct in np.arange(0, 1, 0.1):
+        results[dynamic_pct] = _run_over_epochs(dynamic_pct)
+
+    print("all done!")
+    _ = _draw_plot(results)
+
+    st.title("runtime_s =", time.time() - t0)
+
+if __name__ == "__main__":
+    main()
