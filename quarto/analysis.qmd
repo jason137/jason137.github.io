@@ -9,7 +9,7 @@ __Strategy Type__: Systematic Relative Value
 ## Summary
 This research focuses on isolating mean-reverting signals in calendar spreads for liquid CME futures products.
 
-Modeling is performed using a Kalman filter with GARCH(1, 1) risk adjustment and daily closing prices. Main results emphasize forecast quality and assume $T+0$ “close-to-close” execution. Breakeven costs are estimated using a 15% volatility target across spreads.
+Modeling is performed using a Kalman filter with GARCH(1, 1) risk adjustment and daily closing prices. Main results emphasize forecast quality and assume $T+0$ “close-to-close” execution, providing an estimated upper bound on realizable gross alpha. Breakeven costs are estimated using a 15% volatility target across spreads.
 
 <br>
 
