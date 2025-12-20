@@ -1,3 +1,7 @@
+---
+pagetitle: Jason's Alpha Blog
+---
+
 # Mean Reversion in Futures Curves with Storage Constraints
 
 ## Abstract
