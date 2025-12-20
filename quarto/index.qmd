@@ -1,5 +1,5 @@
 ---
-pagetitle: Jason's Alpha Blog
+pagetitle: "Jason's Blog: Home"
 ---
 
 # Mean Reversion in Futures Curves with Storage Constraints

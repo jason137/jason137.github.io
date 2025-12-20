@@ -1,5 +1,5 @@
 ---
-pagetitle: Mean Reversion in Futures Curves with Storage Constraints
+pagetitle: "Jason's Blog: Research Note"
 ---
 # Mean Reversion in Futures Curves with Storage Constraints
 
