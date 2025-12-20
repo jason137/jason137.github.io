@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quarto-input16efe3bf2f3a635a</title>
+<title>quarto-inputf1e35c86382fa25c</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -166,9 +166,8 @@ window.Quarto = {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>This research investigates mean-reverting signals in calendar spreads across liquid CME futures products (Metals, Crude, STIRs).</p>
-<p>By applying&nbsp;a state-space modeling framework to Working’s theory of storage (Working 1949), we isolate structural alpha driven by physical storage and balance sheet constraints.</p>
-<p>The strategy utilizes a Kalman Filter for signal extraction and a GARCH(1,1) model for dynamic risk adjustment.</p>
-<p>A key finding is that unlike typical mean-reversion strategies which are implicitly short gamma, these storage-constrained spreads exhibit positive PnL skew, profiting from liquidity dislocations when capacity is stretched.</p>
+<p>The study uses a Kalman Filter with a GARCH(1,1) risk adjustment to isolate structural alpha via Working’s theory of storage costs applied to storage-constrained futures calendar spreads.</p>
+<p>A key finding is that unlike typical mean-reversion strategies which are implicitly short gamma, these spreads exhibit positive PnL skew, profiting from liquidity dislocations when storage capacity is stretched.</p>
 </section>
 <section id="key-findings" class="level2">
 <h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
@@ -269,7 +268,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/jason137\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

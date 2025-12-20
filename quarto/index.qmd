@@ -4,11 +4,9 @@
 
 This research investigates mean-reverting signals in calendar spreads across liquid CME futures products (Metals, Crude, STIRs).
 
-By applying a state-space modeling framework to Working's theory of storage (Working 1949), we isolate structural alpha driven by physical storage and balance sheet constraints.
+The study uses a Kalman Filter with a GARCH(1,1) risk adjustment to isolate structural alpha via Working's theory of storage costs applied to storage-constrained futures calendar spreads.
 
-The strategy utilizes a Kalman Filter for signal extraction and a GARCH(1,1) model for dynamic risk adjustment.
-
-A key finding is that unlike typical mean-reversion strategies which are implicitly short gamma, these storage-constrained spreads exhibit positive PnL skew, profiting from liquidity dislocations when capacity is stretched.
+A key finding is that unlike typical mean-reversion strategies which are implicitly short gamma, these spreads exhibit positive PnL skew, profiting from liquidity dislocations when storage capacity is stretched.
 
 ## Key Findings
 

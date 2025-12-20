@@ -1,0 +1,28 @@
+.sourceCode {
+    font-size: 0.8rem;
+}
+
+.cell-output {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: #f8f9fa;
+    /* font-size: 0.85rem; */
+    margin-bottom: 1em !important;
+}
+
+table.narrow {
+  width: 50%; /* Table takes up 50% of the container width */
+  margin-left: auto; 
+  margin-right: auto; /* Centers the table */
+}
+
+/* Target the caption text container */
+.quarto-figure-caption {
+  text-align: left;
+}
+
+/* Ensure any surrounding container doesn't override the alignment */
+.quarto-caption-bottom {
+  text-align: left !important;
+}
