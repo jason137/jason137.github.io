@@ -1,0 +1,33 @@
+# Mean Reversion in Futures Curves with Storage Constraints
+
+## Abstract
+
+This research investigates mean-reverting signals in calendar spreads across liquid CME futures products (Metals, Crude, STIRs).
+
+By applying a state-space modeling framework to Working's theory of storage (Working 1949), we isolate structural alpha driven by physical storage and balance sheet constraints.
+
+The strategy utilizes a Kalman Filter for signal extraction and a GARCH(1,1) model for dynamic risk adjustment.
+
+A key finding is that unlike typical mean-reversion strategies which are implicitly short gamma, these storage-constrained spreads exhibit positive PnL skew, profiting from liquidity dislocations when capacity is stretched.
+
+## Key Findings
+
+* **High Theoretical Alpha:** The model achieves a median Information Coefficient (IC) of **-0.50** (Daily, $T+0$), indicating substantial predictive power.
+
+* **Positive Convexity:** 15 of 18 significant spreads exhibit **positive PnL skew** (median **4.15**), validating the hypothesis that storage constraints create structural mean reversion.
+
+* **Intraday Alpha:** Signal decay analysis confirms that alpha persistence is short-lived ($< T+1$), suggesting the edge is realizable through intraday rather than daily execution.
+
+* **Asset Class Diversity:** Metals show robust standalone characteristics, while crude has higher kurtosis and larger breakevens. STIRs exhibit high efficiency, suggesting the signal acts best as an execution overlay or queue positioning feature in rate markets.
+
+## Methodology Snapshot
+
+* **Universe:** Liquid CME calendar spreads (Metals, Energy, STIRs) constructed to avoid "spot gamma" and First Notice Date risks.
+
+* **Model:** Kalman Filter with GARCH(1, 1) correction and adaptive filtering via noise injection to handle roll gaps without artificial stitching.
+
+* **Backtest:** Vectorized expanding window (June 2010 – Sep 2025).
+
+## Full Analysis
+
+[**Read the full research note &rarr;**](./analysis.html)

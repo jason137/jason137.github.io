@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: " "
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: analysis.qmd
+        text: Research Note
+
+format:
+  html:
+    caption-location: top
+    grid:
+      body-width: 1200px
+      margin-width: 200px
+    fontsize: 1.3em
+    linestretch: 1.8
+    theme:
+      light: cosmo
+      # dark: cyborg
+      # light: flatly
+      # dark: darkly
+    css: styles.css
+    toc: true
+
+serve:
+  port: 4200
+  host: 127.0.0.1
