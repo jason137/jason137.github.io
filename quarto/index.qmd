@@ -22,7 +22,7 @@ A key finding is that unlike typical mean-reversion strategies which are implici
 
 * **Universe:** Liquid CME calendar spreads (Metals, Energy, STIRs) constructed to avoid "spot gamma" and First Notice Date risks.
 
-* **Model:** Kalman Filter with GARCH(1, 1) correction and adaptive filtering via noise injection to handle roll gaps without artificial stitching.
+* **Model:** Kalman Filter with GARCH(1, 1) correction and adaptive filtering via process noise injection to handle roll gaps without artificial stitching.
 
 * **Backtest:** Vectorized expanding window (June 2010 – Sep 2025).
 
