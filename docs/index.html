@@ -165,8 +165,8 @@ window.Quarto = {
 <h1>Mean Reversion in Futures Curves with Storage Constraints</h1>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>This research investigates mean-reverting signals in calendar spreads across liquid CME futures products (Metals, Crude, STIRs).</p>
-<p>The study uses a Kalman Filter with a GARCH(1,1) risk adjustment to isolate structural alpha via Working’s theory of storage costs applied to storage-constrained futures calendar spreads.</p>
+<p>This research focuses on isolating mean-reverting signals in calendar spreads for liquid CME futures products via Working’s theory of storage costs.</p>
+<p>Modeling is performed using a Kalman filter with GARCH(1, 1) risk adjustment and daily closing prices. Main results emphasize forecast quality and assume <span class="math inline">\(T+0\)</span> “close-to-close” execution, providing an estimated upper bound on realizable gross alpha. Breakeven costs are estimated using a 15% volatility target across spreads.</p>
 <p>A key finding is that unlike typical mean-reversion strategies which are implicitly short gamma, these spreads exhibit positive PnL skew, profiting from liquidity dislocations when storage capacity is stretched.</p>
 </section>
 <section id="key-findings" class="level2">

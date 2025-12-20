@@ -6,9 +6,9 @@ pagetitle: Jason's Alpha Blog
 
 ## Abstract
 
-This research investigates mean-reverting signals in calendar spreads across liquid CME futures products (Metals, Crude, STIRs).
+This research focuses on isolating mean-reverting signals in calendar spreads for liquid CME futures products via Working's theory of storage costs.
 
-The study uses a Kalman Filter with a GARCH(1,1) risk adjustment to isolate structural alpha via Working's theory of storage costs applied to storage-constrained futures calendar spreads.
+Modeling is performed using a Kalman filter with GARCH(1, 1) risk adjustment and daily closing prices. Main results emphasize forecast quality and assume $T+0$ “close-to-close” execution, providing an estimated upper bound on realizable gross alpha. Breakeven costs are estimated using a 15% volatility target across spreads.
 
 A key finding is that unlike typical mean-reversion strategies which are implicitly short gamma, these spreads exhibit positive PnL skew, profiting from liquidity dislocations when storage capacity is stretched.
 
