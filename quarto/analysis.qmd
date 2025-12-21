@@ -236,5 +236,23 @@ __Strategy Metrics__
 
 <br>
 
+__Sample Spread Plots__
 
 
+![](img/SI_2_3.png){.lightbox fig-align="center" width="800" }
+
+<br>
+
+![](img/HG_2_3.png){.lightbox fig-align="center" width="800" }
+
+<br>
+
+![](img/CL_9_12.png){.lightbox fig-align="center" width="800" }
+
+<br>
+
+![](img/CL_12_18.png){.lightbox fig-align="center" width="800" }
+
+<br>
+
+![](img/SR3_8_12.png){.lightbox fig-align="center" width="800" }
