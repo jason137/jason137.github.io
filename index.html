@@ -1,64 +1,146 @@
 <!doctype html>
-<html>
+<!-- GENERATED from index.md by build/build.sh. Edit index.md, not this file. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jason Dolatshahi</title>
+  <meta name="description" content="">
+  <style>
+    :root { --ink: #111; --text: #222; --muted: #666; --rule: #ccc; --link: #1a4d8f; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: #fff; color: var(--text);
+      font: 16px/1.5 Georgia, "Times New Roman", Times, serif;
+      font-feature-settings: "lnum" 1, "tnum" 1;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px 48px; }
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>jason</title>
+    header { padding: 32px 0 12px; border-bottom: 1px solid var(--ink); }
+    header h1 { margin: 0; font-size: 22px; font-weight: normal; color: var(--ink); }
+    header p { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+    header nav { margin-top: 10px; font-size: 14px; }
+    header nav a { margin-right: 18px; }
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  </head>
+    h2 { margin: 36px 0 8px; font-size: 18px; font-weight: normal; color: var(--ink); }
+    p { margin: 0 0 12px; max-width: 700px; }
+    ul { margin: 0 0 12px; padding-left: 20px; max-width: 700px; }
+    li { margin-bottom: 4px; }
 
-  <body>
-    <div class="wrapper">
+    table { border-collapse: collapse; width: 100%; margin: 12px 0 8px; font-size: 14px; }
+    th, td { padding: 6px 8px 6px 0; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); }
+    th { font-weight: normal; color: var(--muted); border-bottom: 1px solid var(--ink); }
+    th, td { white-space: nowrap; }
+    .note { font-size: 13.5px; color: var(--muted); }
+    td .note { display: inline-block; margin-top: 2px; }
+    div.note p { margin: 0 0 12px; }
+    h2 + .note { margin-top: -4px; }
 
-      <header>
-        <h1>Jason Dolatshahi</h1><br>
-        <p class="view"><a href="/index.html">home</a></p> 
+    figure { margin: 16px 0 8px; }
+    figure a { display: inline-block; border: 1px solid #999; padding: 6px; background: #fff; }
+    figure img { display: block; width: 100%; max-width: 700px; height: auto; }
+    figcaption { margin-top: 8px; max-width: 700px; font-size: 13.5px; line-height: 1.45; color: var(--muted); }
 
-        <p class="view"><a href="https://docs.google.com/document/d/1P3998XEmkduGBvPZHI4zUtPXJ-dlqE0hTWlqQReCzX0/edit?usp=sharing">resume</a></p>
-        <p class="view"><a href="https://www.linkedin.com/pub/jason-dolatshahi/44/322/53b">linkedin</a></p>
-        <p class="view"><a href="https://github.com/jason137">github</a></p>
-      </header>
+    footer { margin-top: 40px; padding-top: 12px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--muted); }
+    @media (max-width: 640px) { table { display: block; overflow-x: auto; } th, td { padding-right: 6px; font-size: 13px; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
 
-      <section>
-        <p>Hello! Thanks for taking a look at my website.</p>
-        <p>I am a data leader with over a decade of experience building data
-        products, leading teams, and creating value through cutting-edge AI
-        techniques.</p>
-        <p>Here are some links to things I've built lately. Most of these
-        examples rely on deep learning and GPU processing.</p>
+  <header>
+    <h1>Jason Dolatshahi</h1>
+    <p>Systematic Trading · Quantitative Research</p>
+    <nav>
+      <a href="https://github.com/jason137">GitHub</a>
+      <a href="https://www.linkedin.com/pub/jason-dolatshahi/44/322/53b">LinkedIn</a>
+    </nav>
+  </header>
 
-        <h3>Computer Vision</h3>
-        <p><a href="https://rb.gy/sg1tu">This</a> is an example of fine-tuning a pre-trained model for the
-            purpose of land use identification through satellite image classification.</p>
-        <p><a href="https://rb.gy/fwgjk">This</a> is an implementation of stable diffusion.</p>
+<!-- check subtitle comps on LNKD -->
+<h2 id="systematic-macro-portfolio">Systematic Macro Portfolio</h2>
+<ul>
+<li>Styles: trend, carry, relative value</li>
+<li>Venues: NYSE, CME, CBOE, Eurex, CFE</li>
+<li>Asset Classes: equities, rates/STIRs, energy, FX, metals, agriculture</li>
+<li>Signals: causal filtering, volatility modeling, regime gates</li>
+</ul>
+<!-- link goes here -->
+<h2 id="signal-sheets">Signal Sheets</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Signal</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Window</th>
+<th style="text-align: right;">Sharpe (held)</th>
+<th style="text-align: right;">In market</th>
+<th style="text-align: right;">Max DD</th>
+<th style="text-align: right;">Cost b/e</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="#fig1">VIX Spot/Futures Basis</a></td>
+<td style="text-align: left;">Basis/Term Structure Relative Value</td>
+<td style="text-align: right;">2023–26</td>
+<td style="text-align: right;">2.01</td>
+<td style="text-align: right;">63.3%</td>
+<td style="text-align: right;">−6.5%</td>
+<td style="text-align: right;">5×</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#fig2">WTI Crack Spread</a></td>
+<td style="text-align: left;">Energy RV</td>
+<td style="text-align: right;">2010–26</td>
+<td style="text-align: right;">1.38</td>
+<td style="text-align: right;">17.2%</td>
+<td style="text-align: right;">−12.1%</td>
+<td style="text-align: right;">69×</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#fig3">US/EU Rates</a></td>
+<td style="text-align: left;">Duration-neutral RV</td>
+<td style="text-align: right;">2018–26</td>
+<td style="text-align: right;">0.79</td>
+<td style="text-align: right;">86.7%</td>
+<td style="text-align: right;">−15.6%</td>
+<td style="text-align: right;">13×</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#fig4">Macro Trend</a></td>
+<td style="text-align: left;">Diversified macro factor basket</td>
+<td style="text-align: right;">2017–26</td>
+<td style="text-align: right;">1.26</td>
+<td style="text-align: right;">99.8%</td>
+<td style="text-align: right;">−9.9%</td>
+<td style="text-align: right;">8×</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fig1">1. VIX Spot/Futures Basis</h2>
+<figure>
+<a href="sheets/vx_basis.png" target="_blank" rel="noopener"><img src="sheets/vx_basis.png" alt="VIX spot/futures basis tear sheet" loading="lazy" /></a>
+</figure>
+<h2 id="fig2">2. WTI Crack Spread</h2>
+<figure>
+<a href="sheets/wti_crack.png" target="_blank" rel="noopener"><img src="sheets/wti_crack.png" alt="WTI 3:2:1 crack spread tear sheet" loading="lazy" /></a>
+</figure>
+<h2 id="fig3">3. US/EU Rates Relative Value</h2>
+<figure>
+<a href="sheets/us5y_bobl_basis.png" target="_blank" rel="noopener"><img src="sheets/us5y_bobl_basis.png" alt="US 5-year vs Bobl basis tear sheet" loading="lazy" /></a>
+</figure>
+<h2 id="fig4">4. Macro Trend</h2>
+<figure>
+<a href="sheets/trend_core.png" target="_blank" rel="noopener"><img src="sheets/trend_core.png" alt="Trend core tear sheet" loading="lazy" /></a>
+</figure>
 
-        <h3>Large Language Models</h3>
-        <p><a href="https://rb.gy/uww72">This</a> is an app that turns text into sql, and runs it against a sample database.</p>
-        <p><a href="https://rb.gy/vj3vz">This</a> is a little chatbot.</p>
+  <footer>
+    Jason Dolatshahi · <a href="https://github.com/jason137">github.com/jason137</a>
+  </footer>
 
-        <!--<h3>Reinforcement Learning</h3>
-        <p><a href=<LINK_GOES_HERE>This</a> is an app that compares the
-            performance of a greedy decision policy and a simple RL agent for
-            varying degrees of non-stationarity in a simulated environment.
-        </p> -->
-
-        <h3>Time Series</h3>
-        <p><a href="https://rb.gy/9cxbm">This</a> is a demonstration of the use of transformers for time-series forecasting.</p>
-
-        <!-- <h3>Deep Q-Networks</h3> -->
-
-      </section>
-
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+</div>
+</body>
 </html>

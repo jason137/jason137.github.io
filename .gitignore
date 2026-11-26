@@ -2,3 +2,5 @@
 *.swp
 .ipynb_checkpoints/
 data/*
+.claude/
+__pycache__/

@@ -1,0 +1,42 @@
+# Signal Sheets table config. All metrics come from metrics_path; only the
+# hand-written fields live here. Row order follows [[sleeve]] order.
+live_root = "~/Desktop/live"   # the live repo; build.sh redraws the public sheets there from build/sheets.md
+live_python = ".direnv/python-3.14/bin/python"   # its interpreter (= its poetry env), relative to live_root
+metrics_path = "~/Desktop/live/results/sleeve_metrics.toml"
+plots_dir = "~/Desktop/live/plots/public"   # masked sheets, built by live scratch/public_sheets.py
+sheets_dir = "sheets"
+marker = "<!-- sleeve-table -->"
+
+[format]
+sharpe_decimals = 2
+pct_time_decimals = 1
+drawdown_decimals = 1
+breakeven_decimals = 0
+
+[[sleeve]]
+key = "vx_combined_regime"
+name = "VIX Spot/Futures Basis"
+anchor = "fig1"
+description = "Basis/Term Structure Relative Value"
+sheet = "vx_basis.png"
+
+[[sleeve]]
+key = "crack_regime"
+name = "WTI Crack Spread"
+anchor = "fig2"
+description = "Energy RV"
+sheet = "wti_crack.png"
+
+[[sleeve]]
+key = "rates_rv_regime_5y"
+name = "US/EU Rates"
+anchor = "fig3"
+description = "Duration-neutral RV"
+sheet = "us5y_bobl_basis.png"
+
+[[sleeve]]
+key = "core_trend_regime"
+name = "Macro Trend"
+anchor = "fig4"
+description = "Diversified macro factor basket"
+sheet = "trend_core.png"
