@@ -2,6 +2,8 @@
 # hand-written fields live here. Row order follows [[sleeve]] order.
 live_root = "~/Desktop/live"   # the live repo; build.sh redraws the public sheets there from build/sheets.md
 live_python = ".direnv/python-3.14/bin/python"   # its interpreter (= its poetry env), relative to live_root
+memo_stem = "smp_institutional_short"   # the portfolio memo in live docs/ (pitch.md); build.sh renders it with docs/render.sh
+memo_out = "portfolio.html"   # where the rendered memo lands in this site (linked from index.md)
 metrics_path = "~/Desktop/live/results/sleeve_metrics.toml"
 plots_dir = "~/Desktop/live/plots/public"   # masked sheets, built by live scratch/public_sheets.py
 sheets_dir = "sheets"

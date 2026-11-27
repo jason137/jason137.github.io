@@ -17,7 +17,9 @@ nav:
 - Asset Classes: equities, rates/STIRs, energy, FX, metals, agriculture
 - Signals: causal filtering, volatility modeling, regime gates
 
-<!-- link goes here -->
+[Portfolio backtest →](portfolio.html)
+
+* * *
 
 ## Signal Sheets
 
