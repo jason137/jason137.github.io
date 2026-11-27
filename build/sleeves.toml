@@ -8,6 +8,7 @@ metrics_path = "~/Desktop/live/results/sleeve_metrics.toml"
 plots_dir = "~/Desktop/live/plots/public"   # masked sheets, built by live scratch/public_sheets.py
 sheets_dir = "sheets"
 marker = "<!-- sleeve-table -->"
+masked = ["<!-- masked:begin -->", "<!-- masked:end -->"]   # index.md blocks left off the page entirely (source included)
 
 [format]
 sharpe_decimals = 2

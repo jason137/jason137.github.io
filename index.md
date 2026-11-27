@@ -10,6 +10,7 @@ nav:
 
 <!-- check subtitle comps on LNKD -->
 
+<!-- masked:begin -->
 ## Systematic Macro Portfolio
 
 - Styles: trend, carry, relative value
@@ -20,6 +21,8 @@ nav:
 <!-- [Portfolio backtest →](portfolio.html) — unlinked until the memo is final (user 11-26) -->
 
 * * *
+
+<!-- masked:end -->
 
 ## Signal Sheets
 

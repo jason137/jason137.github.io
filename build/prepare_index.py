@@ -46,13 +46,34 @@ def render_row(sleeve: dict, metrics: dict, config: dict) -> str:
     return "| " + " | ".join(cells) + " |"
 
 
+def strip_masked(text: str, markers: list[str]) -> str:
+    """Drop every block between the begin and end markers, markers included, so it never reaches the page or its source.
+
+    Args:
+        text: The index markdown.
+        markers: ``[begin, end]`` marker lines from the config.
+
+    Returns:
+        The markdown without the masked blocks. Unbalanced markers exit the build.
+    """
+    begin, end = markers
+    if text.count(begin) != text.count(end):
+        sys.exit(f"index.md: {text.count(begin)} {begin!r} vs {text.count(end)} {end!r}")
+    while begin in text:
+        i, j = text.index(begin), text.index(end)
+        if j < i:
+            sys.exit(f"index.md: {end!r} before {begin!r}")
+        text = text[:i] + text[j + len(end):].lstrip("\n")
+    return text
+
+
 def main() -> None:
     """Refresh the sheets, then write the expanded markdown to stdout."""
     config = tomllib.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     metrics_path = Path(config["metrics_path"]).expanduser()
     all_metrics = tomllib.loads(metrics_path.read_text(encoding="utf-8"))
 
-    index = INDEX_PATH.read_text(encoding="utf-8")
+    index = strip_masked(INDEX_PATH.read_text(encoding="utf-8"), config["masked"])
     marker = config["marker"]
     if index.count(marker) != 1:
         sys.exit(f"index.md must contain {marker!r} exactly once")
