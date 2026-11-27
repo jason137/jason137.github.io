@@ -6,7 +6,8 @@ cd "$(dirname "$0")/.."
 cfg() { python3 -c "import os, tomllib; print(os.path.expanduser(tomllib.load(open('build/sleeves.toml', 'rb'))['$1']))"; }
 LIVE="$(cfg live_root)"; PY="$(cfg live_python)"; SITE="$(pwd)"
 (cd "$LIVE" && PYTHONPATH=.:scratch:scratch/tmp "$PY" scratch/public_sheets.py --text "$SITE/build/sheets.md")
-# 2. Render the portfolio memo in the live repo (internal blocks stripped) and copy it here.
+# 2. Render the portfolio memo in the live repo (internal blocks stripped) and copy it here (local preview only:
+#    portfolio.html is git-ignored and unlinked until the memo is final, user 11-26).
 MEMO="$(cfg memo_stem)"
 bash "$LIVE/docs/render.sh" "$MEMO"
 cp "$LIVE/docs/$MEMO.html" "$(cfg memo_out)"
